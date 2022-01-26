@@ -1,0 +1,15 @@
+{
+  "TSX:Vue TS Template": {
+    "prefix": "vu-ts-template",
+    "body": [
+      "<template>",
+      "\t<div>$0</div>",
+      "</template>",
+      "<script lang=\"ts\">",
+      "export default {",
+      "\tname: '$1'",
+      "};",
+      "</script>"
+    ]
+  }
+}

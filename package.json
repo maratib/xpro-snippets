@@ -1,0 +1,72 @@
+{
+  "name": "pro-snippets",
+  "displayName": "pro-snippets",
+  "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)",
+  "version": "0.0.1",
+  "icon": "images/pro-snippets.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maratib/pro-snippets.git"
+  },
+  "author": {
+    "name": "Maratib Ali Khan",
+    "email": "maratib@gmail.com",
+    "url": "https://maratib.github.io"
+  },
+  "publisher": "maratib",
+  "license": "ISC",
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript-vue.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript-vue3.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/nuxt.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/nuxt.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/typescriptreact.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/nuxt.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/nuxt.code-snippets"
+      }
+    ]
+  }
+}

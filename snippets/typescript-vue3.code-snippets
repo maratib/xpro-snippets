@@ -1,0 +1,90 @@
+{
+  "TSX:Vue data: () =>": {
+    "prefix": "vData-arrow",
+    "body": ["data: () => ({$1})"]
+  },
+  "TSX:Vue data: function() return": {
+    "prefix": "vData-function",
+    "body": ["data() {", "return {$1};", "},"]
+  },
+
+  "TSX:Vue methods": {
+    "prefix": "vMethods",
+    "body": ["methods: {", "\t${1:fn}() { $0 }", "},"]
+  },
+
+  "TSX:Vue props": {
+    "prefix": "vProps",
+    "body": [
+      "props: {",
+      "\t${1:name}: {",
+      "\t\ttype: String,",
+      "\t\tdefault: 'text',",
+      "\t},",
+      "\t${2:placeholder}: String,",
+      "\t$0",
+      "},"
+    ]
+  },
+
+  "TSX:Vue import ... from 'vue'": {
+    "prefix": "vImport",
+    "body": ["import $0 from 'vue'"]
+  },
+  "TSX:Vue reactive": {
+    "prefix": "vReactive",
+    "body": ["const $0obj = reactive()"]
+  },
+  "TSX:Vue readOnly": {
+    "prefix": "vReadonly",
+    "body": ["const $0obj = readonly()"]
+  },
+  "TSX:Vue setup": {
+    "prefix": "vSetup",
+    "body": ["setup() { $0 },"]
+  },
+  "TSX:Vue onBeforeMount": {
+    "prefix": "von-beforeMount",
+    "body": ["onBeforeMount(() => { $0 }),"]
+  },
+  "TSX:Vue onMount": {
+    "prefix": "von-mount",
+    "body": ["onMount(() => { $0 }),"]
+  },
+  "TSX:Vue onBeforeUpdate": {
+    "prefix": "von-beforeUpdate",
+    "body": ["onBeforeUpdate(() => { $0 }),"]
+  },
+  "TSX:Vue onUpdate": {
+    "prefix": "von-update",
+    "body": ["onUpdate(() => { $0 }),"]
+  },
+  "TSX:Vue onBeforeUnmount": {
+    "prefix": "von-beforeUnmount",
+    "body": ["onBeforeUnmount(() => { $0 }),"]
+  },
+  "TSX:Vue onUnmounted": {
+    "prefix": "von-unmounted",
+    "body": ["onUnmounted(() => { $0 }),"]
+  },
+  "TSX:Vue onErrorCaptured": {
+    "prefix": "von-errorCaptured",
+    "body": ["onErrorCaptured(() => { $0 }),"]
+  },
+  "TSX:Vue onRenderTracked": {
+    "prefix": "von-renderTracked",
+    "body": ["onRenderTracked(() => { $0 }),"]
+  },
+  "TSX:Vue onRenderTriggered": {
+    "prefix": "von-renderTriggered",
+    "body": ["onRenderTriggered(() => { $0 }),"]
+  },
+  "TSX:Vue teleport": {
+    "prefix": "vTeleport",
+    "body": ["<teleport to='$0' />"]
+  },
+  "TSX:Vue componentIs": {
+    "prefix": "vComponentIs",
+    "body": ["<component :is='$0'></component>"]
+  }
+}

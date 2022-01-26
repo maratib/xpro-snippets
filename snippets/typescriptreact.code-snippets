@@ -1,0 +1,26 @@
+{
+  "TSX:React functional component": {
+    "prefix": "react-fc",
+    "description": "React Functional Component",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {",
+      "name?: string;",
+      "};",
+      "",
+      "const $1 = ({ name }: Props) => (",
+      "\t<div>",
+      "\t\t<h1>Hello</h1>$0",
+      "\t</div>",
+      ");",
+      "",
+      "export default $1;"
+    ]
+  },
+  "TSX:React Render Function": {
+    "prefix": "react-render",
+    "description": "React render function",
+    "body": ["render() {", "\treturn (", "\t\t$1", "\t);", "};"]
+  }
+}

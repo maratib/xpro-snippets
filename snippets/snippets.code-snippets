@@ -1,0 +1,6 @@
+{
+  "TSX:Print to console": {
+    "prefix": ["con", "log"],
+    "body": ["console.log($1);"]
+  }
+}

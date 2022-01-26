@@ -1,0 +1,44 @@
+{
+  "TSX:Nuxt": {
+    "prefix": "nuNuxt",
+    "body": ["<Nuxt />"]
+  },
+  "TSX:NuxtChild": {
+    "prefix": "nuNuxtChild",
+    "body": ["<NuxtChild :key=\"123\" />"]
+  },
+  "TSX:NuxtLink": {
+    "prefix": "nuLink",
+    "body": ["<NuxtLink to=\"/$0\">${1:Home page}</NuxtLink>"]
+  },
+  "TSX:NuxtLink prefetch": {
+    "prefix": "nuLink prefetch",
+    "body": ["<NuxtLink to=\"/$0\" prefetch>${1:Home page}</NuxtLink>"]
+  },
+  "TSX:NuxtLink no-prefetch": {
+    "prefix": "nuLink no-prefetch",
+    "body": ["<NuxtLink to=\"/$0\" no-prefetch>${1:Home page}</NuxtLink>"]
+  },
+  "TSX:Nuxt ClintOnly": {
+    "prefix": "nuClientOnly",
+    "body": ["<client-only placeholder=\"Loading...\">", "$0", "</client-only>"]
+  },
+  "TSX:Nuxt head": {
+    "prefix": "nuHead",
+    "body": [
+      "head: {",
+      "\ttitle: 'my website title',",
+      "\tmeta: [",
+      "\t\t{ charset: 'utf-8' },",
+      "\t\t{ name: 'viewport', content: 'width=device-width, initial-scale=1' },",
+      "\t\t{",
+      "\t\t\thid: 'description',",
+      "\t\t\tname: 'description',",
+      "\t\t\tcontent: 'my website description'",
+      "\t\t}",
+      "\t],",
+      "\tlink: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]",
+      "}"
+    ]
+  }
+}
