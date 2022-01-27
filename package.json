@@ -1,12 +1,12 @@
 {
-  "name": "pro-snippets",
-  "displayName": "pro-snippets",
+  "name": "xpro-snippets",
+  "displayName": "xpro-snippets",
   "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)",
   "version": "0.0.1",
-  "icon": "images/pro-snippets.png",
+  "icon": "images/xpro-snippets.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maratib/pro-snippets.git"
+    "url": "https://github.com/maratib/xpro-snippets.git"
   },
   "author": {
     "name": "Maratib Ali Khan",

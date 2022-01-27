@@ -1,12 +1,12 @@
 {
-  "TSX:React functional component": {
+  "XPRO:React functional component": {
     "prefix": "react-fc",
     "description": "React Functional Component",
     "body": [
       "import React from 'react';",
       "",
       "type Props = {",
-      "name?: string;",
+      "\tname?: string;",
       "};",
       "",
       "const $1 = ({ name }: Props) => (",
@@ -18,7 +18,27 @@
       "export default $1;"
     ]
   },
-  "TSX:React Render Function": {
+  "XPRO:React functional component (with return)": {
+    "prefix": "react-fcf",
+    "description": "React Functional Component (with return)",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {",
+      "\tname?: string;",
+      "};",
+      "",
+      "const $1 = ({ name }: Props) => { ",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<h1>Hello</h1>$0",
+      "\t\t</div>",
+      "\t)};",
+      "",
+      "export default $1;"
+    ]
+  },
+  "XPRO:React Render Function": {
     "prefix": "react-render",
     "description": "React render function",
     "body": ["render() {", "\treturn (", "\t\t$1", "\t);", "};"]
