@@ -1,0 +1,45 @@
+{
+  "xPRO:Console Log": {
+    "description": "Log",
+    "prefix": ["con", "log"],
+    "body": ["console.log($1);"]
+  },
+  "xPRO:Create Type": {
+    "description": "Create Type",
+    "prefix": "ts-type",
+    "body": ["type ${1:TypeName} = {", "\t${2:name}: string;", "\t$0", "};"]
+  },
+  "xPRO:Create Interface": {
+    "description": "Create Interface",
+    "prefix": "ts-interface",
+    "body": ["export interface ${1:InterfaceName} {", "\tid: number;", "}"]
+  },
+  "xPRO:Create Class": {
+    "description": "Create Class",
+    "prefix": "ts-class",
+    "body": [
+      "export class ${1:ClassName} {",
+      "\tconstructor($2) {}",
+      "\tadd(a: number, b: number = 10): number$0 {",
+      "\t\treturn a + b;",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Create Enum": {
+    "description": "Create Enum",
+    "prefix": "ts-enum",
+    "body": [
+      "enum ${1:enumName} {",
+      "\t${2:North} = 'N',",
+      "\t${3:East} = 'E',",
+      "\t$0",
+      "};"
+    ]
+  },
+  "xPRO:Create Template String": {
+    "description": "Create Template String",
+    "prefix": "ts-templateString",
+    "body": ["const ${1:name} = `$0`;"]
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "xPRO:Next _document page": {
+    "prefix": "next-document",
+    "description": "Next _document page",
+    "body": [
+      "import Document, { Html, Head, Main, NextScript, DocumentContext } from \"next/document\";",
+      "",
+      "export default class MyDocument extends Document {",
+      "\tstatic async getInitialProps(ctx: DocumentContext) {",
+      "\t\tconst initialProps = await Document.getInitialProps(ctx);",
+      "\t\treturn initialProps;",
+      "\t}",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<Html>",
+      "\t\t\t\t<Head>$0</Head>",
+      "\t\t\t\t<body>",
+      "\t\t\t\t\t<Main />",
+      "\t\t\t\t\t<NextScript />",
+      "\t\t\t\t</body>",
+      "\t\t\t</Html>",
+      "\t\t);",
+      "\t}",
+      "}"
+    ]
+  },
+
+  "xPRO:Next getServerSideProps": {
+    "prefix": "next-getServerSideProps",
+    "description": "Next getServerSideProps",
+    "body": [
+      "export const getServerSideProps: GetServerSideProps = async (ctx: GetServerSidePropsContext) => {",
+      "\t$0",
+      "\treturn {",
+      "\t\tprops: {}",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Next getStaticProps": {
+    "prefix": "next-getStaticProps",
+    "description": "Next getStaticProps",
+    "body": [
+      "export const getStaticProps: GetStaticProps = async (ctx: GetStaticPropsContext) => {",
+      "\t$0",
+      "\treturn {",
+      "\t\tprops: {}",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Next Dynamic Import": {
+    "prefix": "next-dynamic",
+    "description": "Next Dynamic Import",
+    "body": [
+      "const DynamicComponent = dynamic(() => import('../components/Component'))"
+    ]
+  },
+  "xPRO:Next Dynamic Import (with loading)": {
+    "prefix": "next-dynamic",
+    "description": "Next Dynamic Import (with loading)",
+    "body": [
+      "import dynamic from \"next/dynamic\";",
+      "",
+      "const DynamicComponentWithCustomLoading = dynamic(() => import('../components/Component'),",
+      "\t{ loading: () => <p>My Custom Loading</p> }",
+      ");"
+    ]
+  },
+  "xPRO:Next getStaticPaths": {
+    "prefix": "next-getStaticPaths",
+    "description": "Next Dynamic Import (with loading)",
+    "body": [
+      "export const getStaticPaths: GetStaticPaths = async (ctx) => {",
+      "\tconst { data } = await  $0// your fetch function here ",
+      "",
+      "\treturn {",
+      "\t\tpaths: [",
+      "\t\t\t{",
+      "\t\t\t\tparams: {",
+      "\t\t\t\t\t",
+      "\t\t\t\t}",
+      "\t\t\t}",
+      "\t\t],",
+      "\t\tfallback: \"blocking\"",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Next getSession": {
+    "prefix": "next-getSession",
+    "description": "Next getSession Next-Auth",
+    "body": ["const session = await getSession(ctx)"]
+  },
+  "xPRO:Next useSession": {
+    "prefix": "next-useSession",
+    "description": "Next useSession hook Next-Auth",
+    "body": ["const [data: session, status} = useSession()"]
+  },
+  "xPRO:Next useRouter": {
+    "prefix": "next-useRouter",
+    "description": "Next useRouter hook",
+    "body": ["const router = useRouter()"]
+  },
+  "xPRO:Next protect": {
+    "prefix": "next-protect",
+    "description": "Next Protected Route Next-Auth",
+    "body": [
+      "import { useSession } from \"next-auth/react\";",
+      "",
+      "export default function Admin() {",
+      "\tconst { status } = useSession({",
+      "\t\trequired: true,",
+      "\t\tonUnauthenticated() {",
+      "\t\t\t// The user is not authenticated, handle it here.",
+      "\t\t},",
+      "\t});",
+      "",
+      "\tif (status === \"loading\") {",
+      "\t\treturn \"Loading or not authenticated...\";",
+      "}",
+      "",
+      "\treturn \"User is logged in\";",
+      "}"
+    ]
+  },
+  "xPRO:Next Link (with anchor)": {
+    "prefix": "next-link-anchor",
+    "description": "Next Link (with anchor)",
+    "body": ["<Link href=\"$1\">", "\t<a className=\"$0\">$2</a>", "</Link>"]
+  },
+  "xPRO:Next Link": {
+    "prefix": "next-link",
+    "description": "Next Link",
+    "body": ["<Link href=\"$1\">$0<Link>"]
+  },
+  "xPRO:Next Image": {
+    "prefix": "next-image",
+    "description": "Next Image",
+    "body": [
+      "<Image width={$1} height={$2} objectFit=\"cover\" src={$0} alt=\"\"/>"
+    ]
+  },
+  "xPRO:Next API": {
+    "prefix": "next-api",
+    "description": "Next API endpoint",
+    "body": [
+      "import type { NextApiRequest, NextApiResponse } from \"next\"",
+      "",
+      "export default function (req: NextApiRequest, res: NextApiResponse) {",
+      "\tres.status(200).json({ name: 'Example' })",
+      "}"
+    ]
+  },
+  "xPRO:Next Connect API": {
+    "prefix": "next-api-connect",
+    "description": "Next API endpoint for next-connect",
+    "body": [
+      "import { NextApiRequest, NextApiResponse } from \"next\";",
+      "import nc from \"next-connect\";",
+      "// generics to the factory function like bellow",
+      "const nextConnect = nc<NextApiRequest, NextApiResponse>();",
+      "// const service = new JobService();",
+      "nextConnect.get(async (req, res) => {",
+      "\t// const jobs = await service.findAll();",
+      "\tres.status(200).json(\"OK\");",
+      "});",
+      "",
+      "nextConnect.post(async (req, res) => {",
+      "\tres.status(200).json({ hello: \"world\" });",
+      "});",
+      "",
+      "export default nextConnect;"
+    ]
+  },
+  "xPRO:Next Auth": {
+    "prefix": "next-auth",
+    "description": "Next Auth",
+    "body": [
+      "import NextAuth from \"next-auth\";",
+      "import GithubProvider from \"next-auth/providers/github\";",
+      "import CredentialsProvider from \"next-auth/providers/credentials\";",
+      "",
+      "export default NextAuth({",
+      "\t// Configure one or more authentication providers",
+
+      "\tsecret: process.env.SECRET,",
+
+      "\tproviders: [",
+      "\t\tGithubProvider({",
+      "\t\t\tclientId: process.env.GITHUB_ID,",
+      "\t\t\tclientSecret: process.env.GITHUB_SECRET,",
+      "\t\t}),",
+      "\t\t// ...add more providers here",
+      "\t],",
+      "",
+      "\tpages: {",
+      "\t\tsignIn: \"/signin\",",
+      "\t},",
+      "",
+      "\tcallbacks: {",
+      "\t\tsignIn: async ({ user, account, profile, email, credentials }) => {",
+      "\t\t\treturn true;",
+      "\t\t},",
+      "",
+      "\t\tjwt: async ({ token, user, account, profile, isNewUser }) => {",
+      "\t\t\tif (account) {",
+      "\t\t\t\ttoken.accessToken = account.access_token;",
+      "\t\t\t}",
+      "\t\t\treturn token;",
+      "\t\t},",
+      "\t\tsession: async ({ session, token }) => {",
+      "\t\t\treturn session;",
+      "\t\t},",
+      "\t},",
+      "});"
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "XPRO:React function component": {
+  "xPRO:React function component": {
     "prefix": "react-fc",
     "description": "React Function Component",
     "body": [
@@ -18,7 +18,7 @@
       "export default $1;"
     ]
   },
-  "XPRO:React function component (with return)": {
+  "xPRO:React function component (with return)": {
     "prefix": "react-fcf",
     "description": "React Function Component (with return)",
     "body": [
@@ -39,7 +39,7 @@
       "export default $1;"
     ]
   },
-  "XPRO:React Class Component": {
+  "xPRO:React Class Component": {
     "prefix": "react-class",
     "description": "React Class Component",
     "body": [
@@ -57,7 +57,7 @@
       ""
     ]
   },
-  "XPRO:React Class Pure Component": {
+  "xPRO:React Class Pure Component": {
     "prefix": "react-class-pure",
     "description": "React Class Pure Component",
     "body": [
@@ -73,7 +73,7 @@
       ""
     ]
   },
-  "XPRO:React Class Component (with constructor)": {
+  "xPRO:React Class Component (with constructor)": {
     "prefix": "react-class-with-constructor",
     "description": "React Class Component (with constructor)",
     "body": [
@@ -99,17 +99,17 @@
       ""
     ]
   },
-  "XPRO:React useState hook": {
+  "xPRO:React useState hook": {
     "prefix": "react-useState",
     "description": "React useState hook",
     "body": ["const [$1, set$2] = useState($0)", ""]
   },
-  "XPRO:React useEffect hook": {
+  "xPRO:React useEffect hook": {
     "prefix": "react-useEffect",
     "description": "React useEffect hook",
     "body": ["useEffect(() => {", "\t$1", "}, []);", ""]
   },
-  "XPRO:React Render Function": {
+  "xPRO:React Render Function": {
     "prefix": "react-render",
     "description": "React render function",
     "body": ["render() {", "\treturn (", "\t\t$1", "\t);", "};"]

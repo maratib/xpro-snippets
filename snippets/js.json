@@ -1,5 +1,6 @@
 {
-  "TSX:Print to console": {
+  "xPRO:Console Log": {
+    "description": "Log",
     "prefix": ["con", "log"],
     "body": ["console.log($1);"]
   }

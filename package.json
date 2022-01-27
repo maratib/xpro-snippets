@@ -2,7 +2,7 @@
   "name": "xpro-snippets",
   "displayName": "xpro-snippets",
   "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "icon": "images/xpro-snippets.png",
   "main": "./out/src/extension",
   "browser": "./out/src/extension",
@@ -30,47 +30,43 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.code-snippets"
+        "path": "./snippets/js.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/typescript.code-snippets"
+        "path": "./snippets/ts.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/typescript-vue.code-snippets"
+        "path": "./snippets/next.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/typescript-vue3.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/nuxt.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/nuxt.code-snippets"
+        "path": "./snippets/nuxt.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/typescriptreact.code-snippets"
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/next.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/vue.code-snippets"
+        "path": "./snippets/vue.json"
       },
       {
         "language": "vue-html",
-        "path": "./snippets/vue.code-snippets"
+        "path": "./snippets/vue.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/nuxt.code-snippets"
+        "path": "./snippets/nuxt.json"
       },
       {
         "language": "vue-html",
-        "path": "./snippets/nuxt.code-snippets"
+        "path": "./snippets/nuxt.json"
       }
     ],
     "commands": [
@@ -83,6 +79,7 @@
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./",
+    "docs": "ts-node src/doc.ts",
     "test": "node ./node_modules/@vscode/test-electron/out/runTest.js"
   },
   "devDependencies": {

@@ -1,30 +1,37 @@
 {
-  "TSX:Nuxt": {
-    "prefix": "nuNuxt",
+  "xPRO:Nuxt": {
+    "prefix": "nuxt",
+    "description": "nuxt tag",
     "body": ["<Nuxt />"]
   },
-  "TSX:NuxtChild": {
-    "prefix": "nuNuxtChild",
+  "xPRO:NuxtChild": {
+    "prefix": "nuxt-child",
+    "description": "nuxt child",
     "body": ["<NuxtChild :key=\"123\" />"]
   },
-  "TSX:NuxtLink": {
-    "prefix": "nuLink",
+  "xPRO:NuxtLink": {
+    "prefix": "nuxt-link",
+    "description": "nuxt link",
     "body": ["<NuxtLink to=\"/$0\">${1:Home page}</NuxtLink>"]
   },
-  "TSX:NuxtLink prefetch": {
-    "prefix": "nuLink prefetch",
+  "xPRO:NuxtLink prefetch": {
+    "prefix": "nuxt-prefetch",
+    "description": "nuxt preFetch",
     "body": ["<NuxtLink to=\"/$0\" prefetch>${1:Home page}</NuxtLink>"]
   },
-  "TSX:NuxtLink no-prefetch": {
-    "prefix": "nuLink no-prefetch",
+  "xPRO:NuxtLink no-prefetch": {
+    "prefix": "nuxt-no-prefetch",
+    "description": "nuxt no-preFetch",
     "body": ["<NuxtLink to=\"/$0\" no-prefetch>${1:Home page}</NuxtLink>"]
   },
-  "TSX:Nuxt ClintOnly": {
-    "prefix": "nuClientOnly",
+  "xPRO:Nuxt ClintOnly": {
+    "prefix": "nuxt-ClientOnly",
+    "description": "nuxt ClientOnly",
     "body": ["<client-only placeholder=\"Loading...\">", "$0", "</client-only>"]
   },
-  "TSX:Nuxt head": {
-    "prefix": "nuHead",
+  "xPRO:Nuxt head": {
+    "prefix": "nuxt-head",
+    "description": "nuxt head",
     "body": [
       "head: {",
       "\ttitle: 'my website title',",
