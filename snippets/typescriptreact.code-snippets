@@ -1,7 +1,7 @@
 {
-  "XPRO:React functional component": {
+  "XPRO:React function component": {
     "prefix": "react-fc",
-    "description": "React Functional Component",
+    "description": "React Function Component",
     "body": [
       "import React from 'react';",
       "",
@@ -18,9 +18,9 @@
       "export default $1;"
     ]
   },
-  "XPRO:React functional component (with return)": {
+  "XPRO:React function component (with return)": {
     "prefix": "react-fcf",
-    "description": "React Functional Component (with return)",
+    "description": "React Function Component (with return)",
     "body": [
       "import React from 'react';",
       "",
@@ -33,10 +33,81 @@
       "\t\t<div>",
       "\t\t\t<h1>Hello</h1>$0",
       "\t\t</div>",
-      "\t)};",
+      "\t);",
+      "};",
       "",
       "export default $1;"
     ]
+  },
+  "XPRO:React Class Component": {
+    "prefix": "react-class",
+    "description": "React Class Component",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "export default class $1 extends Component { ",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t<h1>Hello</h1>$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      ""
+    ]
+  },
+  "XPRO:React Class Pure Component": {
+    "prefix": "react-class-pure",
+    "description": "React Class Pure Component",
+    "body": [
+      "import React, { PureComponent } from 'react';",
+      "",
+      "export default class $1 extends PureComponent { ",
+
+      "\tstate = { $2 };",
+      "\trender() {",
+      "\t\treturn ( $0 )",
+      "\t}",
+      "}",
+      ""
+    ]
+  },
+  "XPRO:React Class Component (with constructor)": {
+    "prefix": "react-class-with-constructor",
+    "description": "React Class Component (with constructor)",
+    "body": [
+      "import React, { Component } from 'react';",
+      "",
+      "type Props = {",
+      "\tname?: string;",
+      "};",
+      "",
+      "export default class $1 extends Component { ",
+      "\tconstructor(props, { name }: Props) {",
+      "\t\tsuper(props);",
+      "\t\tthis.state = { $2 }",
+      "\t}",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<div>",
+      "\t\t\t\t<h1>Hello</h1>$0",
+      "\t\t\t</div>",
+      "\t\t);",
+      "\t}",
+      "}",
+      ""
+    ]
+  },
+  "XPRO:React useState hook": {
+    "prefix": "react-useState",
+    "description": "React useState hook",
+    "body": ["const [$1, set$2] = useState($0)", ""]
+  },
+  "XPRO:React useEffect hook": {
+    "prefix": "react-useEffect",
+    "description": "React useEffect hook",
+    "body": ["useEffect(() => {", "\t$1", "}, []);", ""]
   },
   "XPRO:React Render Function": {
     "prefix": "react-render",

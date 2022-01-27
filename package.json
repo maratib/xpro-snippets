@@ -2,8 +2,13 @@
   "name": "xpro-snippets",
   "displayName": "xpro-snippets",
   "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon": "images/xpro-snippets.png",
+  "main": "./out/src/extension",
+  "browser": "./out/src/extension",
+  "activationEvents": [
+    "onCommand:extension.stayClassy"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/maratib/xpro-snippets.git"
@@ -67,6 +72,25 @@
         "language": "vue-html",
         "path": "./snippets/nuxt.code-snippets"
       }
+    ],
+    "commands": [
+      {
+        "command": "extension.stayClassy",
+        "title": "React: class to className"
+      }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "test": "node ./node_modules/@vscode/test-electron/out/runTest.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^17.0.12",
+    "@types/vscode": "^1.63.1",
+    "@vscode/test-electron": "^2.1.1",
+    "mocha": "^9.2.0",
+    "typescript": "^4.5.5"
   }
 }
