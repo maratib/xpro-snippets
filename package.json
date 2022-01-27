@@ -2,7 +2,7 @@
   "name": "xpro-snippets",
   "displayName": "xpro-snippets",
   "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "icon": "images/xpro-snippets.png",
   "main": "./out/src/extension",
   "browser": "./out/src/extension",
@@ -79,7 +79,7 @@
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -watch -p ./",
-    "docs": "ts-node src/doc.ts",
+    "docs": "ts-node src/single.ts",
     "test": "node ./node_modules/@vscode/test-electron/out/runTest.js"
   },
   "devDependencies": {
