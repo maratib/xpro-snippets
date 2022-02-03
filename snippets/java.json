@@ -1,0 +1,123 @@
+{
+  "xPRO:Console Log": {
+    "description": "Log: System.out.println",
+    "prefix": ["con", "log"],
+    "body": ["System.out.println($1);"]
+  },
+  "xPRO:Java Class with main method": {
+    "description": "Java Class with main method",
+    "prefix": "java-main",
+    "body": [
+      "public class ${1:ClassName} {",
+      "\tpublic static void main(String args[]) {",
+      "\t\tSystem.out.println($0);",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Java Class with default constructor": {
+    "description": "Java Class with empty constructor",
+    "prefix": "java-class-default-constructor",
+    "body": [
+      "public class ${1:ClassName} {",
+      "\tpublic ${1:ConstructorName}() {",
+      "\t\tsuper();",
+      "\t}",
+      "\tpublic void run() {",
+      "\t\tSystem.out.println(\"Run\");",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Java Abstract Class": {
+    "description": "Java Abstract Class",
+    "prefix": "java-abstract-class",
+    "body": [
+      "abstract class ${1:ClassName} {",
+      "\tpublic abstract void ${2:someMethod()};",
+      "\tpublic void run() {",
+      "\t\tSystem.out.println(\"Run\");",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Java Interface": {
+    "description": "Java Interface",
+    "prefix": "java-interface",
+    "body": [
+      "interface ${1:InterfaceName} {",
+      "\tpublic void run();",
+      "\t$0",
+      "}"
+    ]
+  },
+  "xPRO:Java Enum": {
+    "description": "Java Enum",
+    "prefix": "java-enum",
+    "body": ["enum ${1:EnumName} {", "\tLOW,", "\tHIGH,", "\t$0", "}"]
+  },
+  "xPRO:Java Input": {
+    "description": "Java Command line input",
+    "prefix": "java-input",
+    "body": [
+      "Scanner myObj = new Scanner(System.in);",
+      "String ${1:paramName} = myObj.nextLine();"
+    ]
+  },
+  "xPRO:Java ArrayList": {
+    "description": "Java ArrayList",
+    "prefix": "java-arrayList",
+    "body": ["List <${1:String}> ${0:name} = new ArrayList<${1:String}>();"]
+  },
+  "xPRO:Java LinkedList": {
+    "description": "Java LinkedList",
+    "prefix": "java-linkedList",
+    "body": ["List <${1:String}> ${0:name} = new LinkedList<${1:String}>();"]
+  },
+  "xPRO:Java HashMap": {
+    "description": "Java HashMap",
+    "prefix": "java-hashMap",
+    "body": [
+      "Map <${1:String}, ${2:String}> ${0:name} = new HashMap<${1:String}, ${2:String}>();"
+    ]
+  },
+  "xPRO:Java HashSet": {
+    "description": "Java HashSet",
+    "prefix": "java-hashSet",
+    "body": ["Set <${1:String}> ${0:name} = new HashSet<${1:String}>();"]
+  },
+  "xPRO:Java Iterator": {
+    "description": "Java Iterator",
+    "prefix": "java-iterator",
+    "body": ["Iterator<${1:String}> ${2:name} = ${0:obj}.iterator();"]
+  },
+  "xPRO:Java Try Catch": {
+    "description": "Java Try Catch",
+    "prefix": "java-try-catch",
+    "body": [
+      "try {",
+      "\t//  Block of code to try",
+      "\t$0",
+      "} catch(Exception e) {",
+      "\t//  Block of code to handle errors",
+      "}"
+    ]
+  },
+  "xPRO:Java Thread": {
+    "description": "Java Thread",
+    "prefix": "java-thread",
+    "body": [
+      "public class ${1:MyThread} extends Thread {",
+      "\tpublic void run(){",
+      "\t\tSystem.out.println(\"This code is running in a thread\")",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ]
+  },
+  "xPRO:Java For Loop": {
+    "description": "Java For Loop",
+    "prefix": "java-for-loop",
+    "body": ["for(int i=0 ;i < $1 ; i++)", "{", "\t\t$0", "}"]
+  }
+}

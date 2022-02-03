@@ -1,7 +1,7 @@
 {
   "name": "xpro-snippets",
   "displayName": "xpro-snippets",
-  "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)",
+  "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express, java, spring, spring boot, spring mvc snippets (all in one power pack)",
   "version": "0.0.5",
   "icon": "images/xpro-snippets.png",
   "main": "./out/src/extension",
@@ -67,6 +67,10 @@
       {
         "language": "vue-html",
         "path": "./snippets/nuxt.json"
+      },
+      {
+        "language": "java",
+        "path": "./snippets/java.json"
       }
     ],
     "commands": [
