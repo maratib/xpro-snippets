@@ -5,6 +5,29 @@
 
  <hr />  
 
+## java snippets
+
+| Syntax      | Description |
+| ----------- | ----------- |
+|`con,log`|Log: System.out.println | 
+|`java-main`|Java Class with main method | 
+|`java-class-default-constructor`|Java Class with empty constructor | 
+|`java-abstract-class`|Java Abstract Class | 
+|`java-interface`|Java Interface | 
+|`java-enum`|Java Enum | 
+|`java-input`|Java Command line input | 
+|`java-arrayList`|Java ArrayList | 
+|`java-linkedList`|Java LinkedList | 
+|`java-hashMap`|Java HashMap | 
+|`java-hashSet`|Java HashSet | 
+|`java-iterator`|Java Iterator | 
+|`java-try-catch`|Java Try Catch | 
+|`java-thread`|Java Thread | 
+|`java-for-loop`|Java For Loop | 
+  
+
+ <hr />  
+
 ## js snippets
 
 | Syntax      | Description |
