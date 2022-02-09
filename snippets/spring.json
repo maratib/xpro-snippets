@@ -1,0 +1,73 @@
+{
+  "xPRO:Spring main application": {
+    "description": "Spring main application",
+    "prefix": "spring-main",
+    "body": [
+      "package ${1:packageName};",
+      "",
+      "import org.springframework.boot.SpringApplication;",
+      "import org.springframework.boot.autoconfigure.SpringBootApplication;",
+      "import org.springframework.scheduling.annotation.EnableScheduling;",
+
+      "@SpringBootApplication",
+      "public class ${2:SpringBootApplication} {",
+      "",
+
+      "public static void main(String[] args) {",
+      "",
+      "\tSpringApplication.run(IdcApplication.class, args);",
+      "",
+      "}",
+      "}"
+    ]
+  },
+  "xPRO:Spring web controller": {
+    "description": "Spring web controller",
+    "prefix": "spring-web-controller",
+    "body": [
+      "package ${1:packageName};",
+      "",
+      "import org.springframework.stereotype.Controller;",
+      "import org.springframework.ui.Model;",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.RequestMapping;",
+      "import org.springframework.web.bind.annotation.RequestParam;",
+      "",
+      "@Controller",
+      "@RequestMapping(\"/greeting\")",
+      "public class ${2:ControllerName} {",
+      "",
+      "\t@GetMapping",
+      "\tpublic String greeting(@RequestParam(name=\"name\", required=false, defaultValue=\"World\") String name, Model model) {",
+      "\t\tmodel.addAttribute(\"name\", name);",
+      "\t\treturn \"greeting\";",
+      "\t}",
+      "$0",
+      "}"
+    ]
+  },
+  "xPRO:Spring rest controller": {
+    "description": "Spring rest controller",
+    "prefix": "spring-rest-controller",
+    "body": [
+      "package ${1:packageName};",
+      "",
+      "import org.springframework.web.bind.annotation.GetMapping;",
+      "import org.springframework.web.bind.annotation.RequestMapping;",
+      "import org.springframework.web.bind.annotation.RequestParam;",
+      "import org.springframework.web.bind.annotation.RestController;",
+      "",
+      "@RestController",
+      "@RequestMapping(\"/greeting\")",
+      "public class ${2:ControllerName} {",
+      "",
+      "\t@GetMapping",
+      "\tpublic String greeting(@RequestParam(name=\"name\", required=false, defaultValue=\"World\") String name) {",
+      "\t\tString response = \"Hello, \" + name;",
+      "\t\treturn response;",
+      "\t}",
+      "$0",
+      "}"
+    ]
+  }
+}

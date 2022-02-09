@@ -50,7 +50,7 @@ function writeFile(data) {
   const to = `${docsFolder}/README.md`;
   data =
     `# xPro-Snippets
-## Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)
+## Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express, Java, Spring, SpringBoot snippets (all in one power pack)
 
 ### Also covers Vue3, Nuxt3  \n\n <hr />  \n\n` + data;
 

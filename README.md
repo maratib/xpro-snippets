@@ -92,6 +92,16 @@
 
  <hr />  
 
+## spring snippets
+
+| Syntax      | Description |
+| ----------- | ----------- |
+|`spring-main`|Spring main application | 
+|`spring-web-controller`|Spring web controller | 
+  
+
+ <hr />  
+
 ## ts snippets
 
 | Syntax      | Description |

@@ -69,7 +69,7 @@
   },
   "xPRO:Next getStaticPaths": {
     "prefix": "next-getStaticPaths",
-    "description": "Next Dynamic Import (with loading)",
+    "description": "Next getStaticPaths",
     "body": [
       "export const getStaticPaths: GetStaticPaths = async (ctx) => {",
       "\tconst { data } = await  $0// your fetch function here ",
