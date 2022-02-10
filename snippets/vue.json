@@ -1,9 +1,78 @@
 {
-  "xPRO:Vue data: () =>": {
-    "prefix": "vue-data-arrow",
-    "description": "Create Data Arrow Function",
-    "body": ["data: () => ({$1})"]
+  "xPRO:Vue SFC Template": {
+    "prefix": "vue-template",
+    "description": "Create Vue Template",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script>",
+      "\texport default {",
+      "\t\tname:\"${1}\",",
+      "\t\tdata() {",
+      "\t\t\treturn {",
+      "\t\t\t\tgreeting: \"Hello\"",
+      "\t\t\t\t${2}",
+      "\t\t\t}",
+      "\t\t}",
+      "\t}",
+      "</script>"
+    ]
   },
+  "xPRO:Vue TS Template": {
+    "prefix": "vue-ts-template",
+    "description": "Create TS Template",
+    "body": [
+      "<script lang=\"ts\">",
+      "export default {",
+      "\tname: '$1'",
+      "};",
+      "</script>",
+      "<template>",
+      "\t<div>$0</div>",
+      "</template>"
+    ]
+  },
+  "xPRO:Vue TS Setup Template": {
+    "prefix": "vue-ts-setup-template",
+    "description": "Create TS Setup Template",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "import { ref } from \"vue\";",
+      "import HelloWorld from \"@/components/HelloWorld.vue\";",
+      "\tdefineProps<{ msg?: string }>();",
+      "\tconst count = ref(0);",
+      "</script>",
+      "",
+      "<template>",
+      "\t<h1>{{ msg }}</h1>",
+      "</template>"
+    ]
+  },
+
+  "xPRO:Vue TS Props": {
+    "prefix": "vue-ts-define-props",
+    "description": "Create TS Props",
+    "body": ["defineProps<{ msg?: string${0} }>();"]
+  },
+
+  "xPRO:Vue props": {
+    "prefix": "vue-props",
+    "description": "Create Props",
+    "body": [
+      "props: {",
+      "\t${1:name}: {",
+      "\t\ttype: String,",
+      "\t\tdefault: 'text',",
+      "\t},",
+      "\t$0",
+      "},"
+    ]
+  },
+
   "xPRO:Vue data: function() return": {
     "prefix": "vue-data-function",
     "description": "Create Data Function",
@@ -14,21 +83,6 @@
     "prefix": "vue-Methods",
     "description": "Create Methods",
     "body": ["methods: {", "\t${1:fn}() { $0 }", "},"]
-  },
-
-  "xPRO:Vue props": {
-    "prefix": "vue-Props",
-    "description": "Create Props",
-    "body": [
-      "props: {",
-      "\t${1:name}: {",
-      "\t\ttype: String,",
-      "\t\tdefault: 'text',",
-      "\t},",
-      "\t${2:placeholder}: String,",
-      "\t$0",
-      "},"
-    ]
   },
 
   "xPRO:Vue import ... from 'vue'": {
@@ -96,28 +150,9 @@
     "description": "Create onRenderTriggered",
     "body": ["onRenderTriggered(() => { $0 }),"]
   },
-  "xPRO:Vue teleport": {
-    "prefix": "vue-Teleport",
-    "description": "Create Teleport",
-    "body": ["<teleport to='$0' />"]
-  },
   "xPRO:Vue componentIs": {
     "prefix": "vue-ComponentIs",
     "description": "Create ComponentIs",
     "body": ["<component :is='$0'></component>"]
-  },
-  "xPRO:Vue TS Template": {
-    "prefix": "vu-ts-template",
-    "description": "Create TS Template",
-    "body": [
-      "<template>",
-      "\t<div>$0</div>",
-      "</template>",
-      "<script lang=\"ts\">",
-      "export default {",
-      "\tname: '$1'",
-      "};",
-      "</script>"
-    ]
   }
 }

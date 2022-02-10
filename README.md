@@ -1,5 +1,5 @@
 # xPro-Snippets
-## Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express snippets (all in one power pack)
+## Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express, Java, Spring, SpringBoot snippets (all in one power pack)
 
 ### Also covers Vue3, Nuxt3  
 
@@ -46,7 +46,7 @@
 |`next-getStaticProps`|Next getStaticProps | 
 |`next-dynamic`|Next Dynamic Import | 
 |`next-dynamic`|Next Dynamic Import (with loading) | 
-|`next-getStaticPaths`|Next Dynamic Import (with loading) | 
+|`next-getStaticPaths`|Next getStaticPaths | 
 |`next-getSession`|Next getSession Next-Auth | 
 |`next-useSession`|Next useSession hook Next-Auth | 
 |`next-useRouter`|Next useRouter hook | 
@@ -98,6 +98,7 @@
 | ----------- | ----------- |
 |`spring-main`|Spring main application | 
 |`spring-web-controller`|Spring web controller | 
+|`spring-rest-controller`|Spring rest controller | 
   
 
  <hr />  
@@ -120,10 +121,13 @@
 
 | Syntax      | Description |
 | ----------- | ----------- |
-|`vue-data-arrow`|Create Data Arrow Function | 
+|`vue-template`|Create Vue Template | 
+|`vue-ts-template`|Create TS Template | 
+|`vue-ts-setup-template`|Create TS Setup Template | 
+|`vue-ts-define-props`|Create TS Props | 
+|`vue-props`|Create Props | 
 |`vue-data-function`|Create Data Function | 
 |`vue-Methods`|Create Methods | 
-|`vue-Props`|Create Props | 
 |`vue-Import`|import vue | 
 |`vue-Reactive`|Create Reactive Object | 
 |`vue-Readonly`|Create Readonly Object | 
@@ -137,9 +141,7 @@
 |`vue-on-errorCaptured`|Create onErrorCaptured | 
 |`vue-on-renderTracked`|Create onRenderTracked | 
 |`vue-on-renderTriggered`|Create onRenderTriggered | 
-|`vue-Teleport`|Create Teleport | 
 |`vue-ComponentIs`|Create ComponentIs | 
-|`vu-ts-template`|Create TS Template | 
   
 
  <hr />  
