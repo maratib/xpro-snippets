@@ -64,12 +64,48 @@
     "description": "Create Props",
     "body": [
       "props: {",
+      "\tname: String,",
       "\t${1:name}: {",
       "\t\ttype: String,",
       "\t\tdefault: 'text',",
       "\t},",
       "\t$0",
       "},"
+    ]
+  },
+
+  "xPRO:Vue store": {
+    "prefix": "vue-store-vue2",
+    "description": "Create Vuex Store for vue2",
+    "body": [
+      "import Vue from \"vue\"",
+      "import Vuex from \"vuex\"",
+      "",
+      "Vue.use(Vuex)",
+      "const state = {",
+      "\t// single source of data",
+      "}",
+      "",
+      "const actions = {",
+      "\t// asynchronous operations",
+      "}",
+      "",
+      "const mutations = {",
+      "\t// isolated data mutations",
+      "}",
+      "",
+      "const getters = {",
+      "\t// reusable data accessors",
+      "}",
+      "",
+      "const store = new Vuex.Store({",
+      "\tstate,",
+      "\tactions,",
+      "\tmutations,",
+      "\tgetters",
+      "})",
+      "",
+      "export default store"
     ]
   },
 
@@ -80,13 +116,13 @@
   },
 
   "xPRO:Vue methods": {
-    "prefix": "vue-Methods",
+    "prefix": "vue-methods",
     "description": "Create Methods",
-    "body": ["methods: {", "\t${1:fn}() { $0 }", "},"]
+    "body": ["methods: {", "\t${1:functionName}() { $0 }", "},"]
   },
 
   "xPRO:Vue import ... from 'vue'": {
-    "prefix": "vue-Import",
+    "prefix": "vue-import",
     "description": "import vue",
     "body": ["import $0 from 'vue'"]
   },
