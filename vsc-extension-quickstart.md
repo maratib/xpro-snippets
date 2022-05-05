@@ -28,3 +28,7 @@ npm install -g vsce
 vsce package
 vsce publish or upload manually by right clicking 
 ```
+Update on 
+[Click to deply](https://marketplace.visualstudio.com/manage/publishers/maratib?tracking_data=eyJTb3VyY2UiOiJFbWFpbCIsIlR5cGUiOiJOb3RpZmljYXRpb24iLCJTSUQiOiJtcy5HYWxsZXJ5Tm90aWZpY2F0aW9ucy52ZXJzaW9uLXZhbGlkYXRpb24tc3Vic2NyaXB0aW9uIiwiU1R5cGUiOiJDT04iLCJSZWNpcCI6MSwiX3hjaSI6eyJOSUQiOjE1OTUzNzQsIk1SZWNpcCI6Im0wPTEgIiwiQWN0IjoiNjc4NTIzN2YtODMyNS00YWJiLTg4NmMtMTljYjMwMzE4ZDBjIn0sIkVsZW1lbnQiOiJoZXJvL2N0YSJ9)
+
+

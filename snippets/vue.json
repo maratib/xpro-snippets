@@ -52,6 +52,31 @@
       "</template>"
     ]
   },
+  "xPRO:Vue defineProps": {
+    "prefix": "vue-defineProps",
+    "description": "Vue defineProps",
+    "body": [
+      "withDefaults(defineProps<{ foo: string; bar: number }>(), { bar: 200 });"
+    ]
+  },
+
+  "xPRO:Vue defineProps with Interface": {
+    "prefix": "vue-defineProps-interface",
+    "description": "Vue defineProps",
+    "body": [
+      "interface Props {",
+      "\tfoo: string;",
+      "\tbar?: number;",
+      "}",
+      "withDefaults(defineProps<Props>(), { bar: 300 });"
+    ]
+  },
+
+  "xPRO:Vue ref Template": {
+    "prefix": "vue-ref",
+    "description": "Create Vue Ref",
+    "body": ["import { ref } from \"vue\";", "\tconst count = ref(0);"]
+  },
 
   "xPRO:Vue TS Props": {
     "prefix": "vue-ts-define-props",
@@ -127,14 +152,24 @@
     "body": ["import $0 from 'vue'"]
   },
   "xPRO:Vue reactive": {
-    "prefix": "vue-Reactive",
+    "prefix": "vue-reactive",
     "description": "Create Reactive Object",
-    "body": ["const $0obj = reactive()"]
+    "body": [
+      "const $0obj = reactive({",
+      "\tfoo: \"Foo\",",
+      "\tbar: 200,",
+      "});"
+    ]
   },
   "xPRO:Vue readOnly": {
-    "prefix": "vue-Readonly",
+    "prefix": "vue-readonly",
     "description": "Create Readonly Object",
-    "body": ["const $0obj = readonly()"]
+    "body": [
+      "const $0obj = readonly({",
+      "\tfoo: \"Foo\",",
+      "\tbar: 200,",
+      "});"
+    ]
   },
   "xPRO:Vue setup": {
     "prefix": "vue-Setup",

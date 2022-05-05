@@ -124,13 +124,17 @@
 |`vue-template`|Create Vue Template | 
 |`vue-ts-template`|Create TS Template | 
 |`vue-ts-setup-template`|Create TS Setup Template | 
+|`vue-defineProps`|Vue defineProps | 
+|`vue-defineProps-interface`|Vue defineProps | 
+|`vue-ref`|Create Vue Ref | 
 |`vue-ts-define-props`|Create TS Props | 
 |`vue-props`|Create Props | 
+|`vue-store-vue2`|Create Vuex Store for vue2 | 
 |`vue-data-function`|Create Data Function | 
-|`vue-Methods`|Create Methods | 
-|`vue-Import`|import vue | 
-|`vue-Reactive`|Create Reactive Object | 
-|`vue-Readonly`|Create Readonly Object | 
+|`vue-methods`|Create Methods | 
+|`vue-import`|import vue | 
+|`vue-reactive`|Create Reactive Object | 
+|`vue-readonly`|Create Readonly Object | 
 |`vue-Setup`|Create Setup | 
 |`vue-on-beforeMount`|Create onBeforeMount | 
 |`vue-on-mount`|Create onMount | 
