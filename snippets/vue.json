@@ -41,20 +41,23 @@
     "description": "Create TS Setup Template",
     "body": [
       "<script setup lang=\"ts\">",
-      "import { ref } from \"vue\";",
-      "import HelloWorld from \"@/components/HelloWorld.vue\";",
-      "\tdefineProps<{ msg?: string }>();",
-      "\tconst count = ref(0);",
+      "$1",
       "</script>",
       "",
       "<template>",
-      "\t<h1>{{ msg }}</h1>",
+      "\t<div>$0</div>",
       "</template>"
     ]
   },
+  "xPRO:Vue TS Props": {
+    "prefix": "vue-ts-define-props",
+    "description": "Create TS Props",
+    "body": ["defineProps<{ msg?: string${0} }>();"]
+  },
+
   "xPRO:Vue defineProps": {
     "prefix": "vue-defineProps",
-    "description": "Vue defineProps",
+    "description": "Vue defineProps with defaults",
     "body": [
       "withDefaults(defineProps<{ foo: string; bar: number }>(), { bar: 200 });"
     ]
@@ -62,7 +65,7 @@
 
   "xPRO:Vue defineProps with Interface": {
     "prefix": "vue-defineProps-interface",
-    "description": "Vue defineProps",
+    "description": "Vue defineProps with defaults",
     "body": [
       "interface Props {",
       "\tfoo: string;",
@@ -76,12 +79,6 @@
     "prefix": "vue-ref",
     "description": "Create Vue Ref",
     "body": ["import { ref } from \"vue\";", "\tconst count = ref(0);"]
-  },
-
-  "xPRO:Vue TS Props": {
-    "prefix": "vue-ts-define-props",
-    "description": "Create TS Props",
-    "body": ["defineProps<{ msg?: string${0} }>();"]
   },
 
   "xPRO:Vue props": {
