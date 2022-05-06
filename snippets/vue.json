@@ -78,7 +78,7 @@
   "xPRO:Vue ref Template": {
     "prefix": "vue-ref",
     "description": "Create Vue Ref",
-    "body": ["import { ref } from \"vue\";", "\tconst count = ref(0);"]
+    "body": ["import { ref } from \"vue\";", "$0const count = ref(0);"]
   },
 
   "xPRO:Vue props": {
@@ -176,32 +176,42 @@
   "xPRO:Vue onBeforeMount": {
     "prefix": "vue-on-beforeMount",
     "description": "Create onBeforeMount",
-    "body": ["onBeforeMount(() => { $0 }),"]
-  },
-  "xPRO:Vue onMount": {
-    "prefix": "vue-on-mount",
-    "description": "Create onMount",
-    "body": ["onMount(() => { $0 }),"]
-  },
-  "xPRO:Vue onBeforeUpdate": {
-    "prefix": "vue-on-beforeUpdate",
-    "description": "Create onBeforeUpdate",
-    "body": ["onBeforeUpdate(() => { $0 }),"]
-  },
-  "xPRO:Vue onUpdate": {
-    "prefix": "vue-on-update",
-    "description": "Create onUpdate",
-    "body": ["onUpdate(() => { $0 }),"]
+    "body": ["onBeforeMount(() => { $0 });"]
   },
   "xPRO:Vue onBeforeUnmount": {
     "prefix": "vue-on-beforeUnmount",
     "description": "Create onBeforeUnMount",
-    "body": ["onBeforeUnmount(() => { $0 }),"]
+    "body": ["onBeforeUnmount(() => { $0 });"]
+  },
+  "xPRO:Vue onMount": {
+    "prefix": "vue-on-mounted",
+    "description": "Create onMounted",
+    "body": ["onMounted(() => { $0 });"]
   },
   "xPRO:Vue onUnmounted": {
     "prefix": "vue-on-unmounted",
     "description": "Create onUnMounted",
     "body": ["onUnmounted(() => { $0 }),"]
+  },
+  "xPRO:Vue onBeforeUpdate": {
+    "prefix": "vue-on-beforeUpdate",
+    "description": "Create onBeforeUpdate",
+    "body": ["onBeforeUpdate(() => { $0 });"]
+  },
+  "xPRO:Vue onUpdated": {
+    "prefix": "vue-on-updated",
+    "description": "Create onUpdated",
+    "body": ["onUpdated(() => { $0 });"]
+  },
+  "xPRO:Vue onActivated": {
+    "prefix": "vue-on-activated",
+    "description": "Create onActivated",
+    "body": ["onActivated(() => { $0 });"]
+  },
+  "xPRO:Vue onDeactivated": {
+    "prefix": "vue-on-deactivated",
+    "description": "Create onDeactivated",
+    "body": ["onDeactivated(() => { $0 });"]
   },
   "xPRO:Vue onErrorCaptured": {
     "prefix": "vue-on-errorCaptured",

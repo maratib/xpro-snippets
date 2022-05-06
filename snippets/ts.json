@@ -41,5 +41,11 @@
     "description": "Create Template String",
     "prefix": "ts-templateString",
     "body": ["const ${1:name} = `$0`;"]
+  },
+
+  "xPRO:Create Arrow Function": {
+    "description": "Create Typescript arrow function",
+    "prefix": "ts-arrow",
+    "body": ["const ${1:name} = ($2) => { $0 };"]
   }
 }

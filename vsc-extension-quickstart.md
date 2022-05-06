@@ -24,6 +24,7 @@
 
 ## to publish 
 ```
+yarn docs
 npm install -g vsce
 vsce package
 vsce publish or upload manually by right clicking 

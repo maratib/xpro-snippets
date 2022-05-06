@@ -113,6 +113,7 @@
 |`ts-class`|Create Class | 
 |`ts-enum`|Create Enum | 
 |`ts-templateString`|Create Template String | 
+|`ts-arrow`|Create Typescript arrow function | 
   
 
  <hr />  
@@ -124,10 +125,10 @@
 |`vue-template`|Create Vue Template | 
 |`vue-ts-template`|Create TS Template | 
 |`vue-ts-setup-template`|Create TS Setup Template | 
-|`vue-defineProps`|Vue defineProps | 
-|`vue-defineProps-interface`|Vue defineProps | 
-|`vue-ref`|Create Vue Ref | 
 |`vue-ts-define-props`|Create TS Props | 
+|`vue-defineProps`|Vue defineProps with defaults | 
+|`vue-defineProps-interface`|Vue defineProps with defaults | 
+|`vue-ref`|Create Vue Ref | 
 |`vue-props`|Create Props | 
 |`vue-store-vue2`|Create Vuex Store for vue2 | 
 |`vue-data-function`|Create Data Function | 
@@ -137,11 +138,13 @@
 |`vue-readonly`|Create Readonly Object | 
 |`vue-Setup`|Create Setup | 
 |`vue-on-beforeMount`|Create onBeforeMount | 
-|`vue-on-mount`|Create onMount | 
-|`vue-on-beforeUpdate`|Create onBeforeUpdate | 
-|`vue-on-update`|Create onUpdate | 
 |`vue-on-beforeUnmount`|Create onBeforeUnMount | 
+|`vue-on-mounted`|Create onMounted | 
 |`vue-on-unmounted`|Create onUnMounted | 
+|`vue-on-beforeUpdate`|Create onBeforeUpdate | 
+|`vue-on-updated`|Create onUpdated | 
+|`vue-on-activated`|Create onActivated | 
+|`vue-on-deactivated`|Create onDeactivated | 
 |`vue-on-errorCaptured`|Create onErrorCaptured | 
 |`vue-on-renderTracked`|Create onRenderTracked | 
 |`vue-on-renderTriggered`|Create onRenderTriggered | 
