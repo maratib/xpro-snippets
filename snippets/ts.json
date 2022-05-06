@@ -44,8 +44,26 @@
   },
 
   "xPRO:Create Arrow Function": {
-    "description": "Create Typescript arrow function",
+    "description": "Create Arrow Function",
     "prefix": "ts-arrow",
     "body": ["const ${1:name} = ($2) => { $0 };"]
+  },
+
+  "xPRO:Create Switch": {
+    "description": "Create Switch",
+    "prefix": "ts-switch",
+    "body": [
+      "switch (expression) {",
+      "\tcase \"primary\":",
+      "\t\t//statement",
+      "\t\tbreak;",
+      "\tcase \"error\":",
+      "\t\t//statement",
+      "\t\tbreak;",
+      "\tdefault:",
+      "\t\t//statement",
+      "\t\tbreak;",
+      "}"
+    ]
   }
 }
