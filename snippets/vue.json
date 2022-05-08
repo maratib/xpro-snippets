@@ -191,7 +191,7 @@
   "xPRO:Vue onUnmounted": {
     "prefix": "vue-on-unmounted",
     "description": "Create onUnMounted",
-    "body": ["onUnmounted(() => { $0 }),"]
+    "body": ["onUnmounted(() => { $0 });"]
   },
   "xPRO:Vue onBeforeUpdate": {
     "prefix": "vue-on-beforeUpdate",
@@ -216,17 +216,17 @@
   "xPRO:Vue onErrorCaptured": {
     "prefix": "vue-on-errorCaptured",
     "description": "Create onErrorCaptured",
-    "body": ["onErrorCaptured(() => { $0 }),"]
+    "body": ["onErrorCaptured(() => { $0 });"]
   },
   "xPRO:Vue onRenderTracked": {
     "prefix": "vue-on-renderTracked",
     "description": "Create onRenderTracked",
-    "body": ["onRenderTracked(() => { $0 }),"]
+    "body": ["onRenderTracked(() => { $0 });"]
   },
   "xPRO:Vue onRenderTriggered": {
     "prefix": "vue-on-renderTriggered",
     "description": "Create onRenderTriggered",
-    "body": ["onRenderTriggered(() => { $0 }),"]
+    "body": ["onRenderTriggered(() => { $0 });"]
   },
   "xPRO:Vue componentIs": {
     "prefix": "vue-ComponentIs",
