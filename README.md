@@ -33,6 +33,8 @@
 | Syntax      | Description |
 | ----------- | ----------- |
 |`con,log`|Log | 
+|`sb-vue2`|Vue2 Storybook Template | 
+|`sb-vue3`|Vue3 Storybook Template | 
   
 
  <hr />  
@@ -88,6 +90,7 @@
 |`react-useState`|React useState hook | 
 |`react-useEffect`|React useEffect hook | 
 |`react-render`|React render function | 
+|`sb-react-ts`|React Storybook TS | 
   
 
  <hr />  
@@ -113,7 +116,8 @@
 |`ts-class`|Create Class | 
 |`ts-enum`|Create Enum | 
 |`ts-templateString`|Create Template String | 
-|`ts-arrow`|Create Typescript arrow function | 
+|`ts-arrow`|Create Arrow Function | 
+|`ts-switch`|Create Switch | 
   
 
  <hr />  
@@ -125,8 +129,8 @@
 |`vue-template`|Create Vue Template | 
 |`vue-ts-template`|Create TS Template | 
 |`vue-ts-setup-template`|Create TS Setup Template | 
-|`vue-ts-define-props`|Create TS Props | 
-|`vue-defineProps`|Vue defineProps with defaults | 
+|`vue-defineProps`|Create TS Props | 
+|`vue-defineProps-with-defaults`|Vue defineProps with defaults | 
 |`vue-defineProps-interface`|Vue defineProps with defaults | 
 |`vue-ref`|Create Vue Ref | 
 |`vue-props`|Create Props | 

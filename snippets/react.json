@@ -113,5 +113,32 @@
     "prefix": "react-render",
     "description": "React render function",
     "body": ["render() {", "\treturn (", "\t\t$1", "\t);", "};"]
+  },
+  "xPRO:Storybook React": {
+    "prefix": "sb-react-ts",
+    "description": "React Storybook TS",
+    "body": [
+      "import React from 'react';",
+      "import { ComponentStory, ComponentMeta } from '@storybook/react';",
+      "",
+      "import { ${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}} } from '../components/${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}}';",
+      "",
+      "export default {",
+      "\ttitle: '${2:Components}/${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}}',",
+      "\tcomponent: ${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}},",
+      "\targs: {},",
+      "} as ComponentMeta<typeof ${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}}>;",
+      "",
+      "const Template: ComponentStory<typeof ${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}}> = (args) => (",
+      "\t<${1:${TM_FILENAME/(.*).stories.tsx?/${1}/}} {...args} />",
+      ");",
+      "",
+      "export const ${5:Story} = Template.bind({});",
+      "$5.args = {",
+      "\tprimary: true,",
+      "\tlabel: \"Button\",",
+      "};",
+      "$0"
+    ]
   }
 }

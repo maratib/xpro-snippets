@@ -50,13 +50,13 @@
     ]
   },
   "xPRO:Vue TS Props": {
-    "prefix": "vue-ts-define-props",
+    "prefix": "vue-defineProps",
     "description": "Create TS Props",
     "body": ["defineProps<{ msg?: string${0} }>();"]
   },
 
   "xPRO:Vue defineProps": {
-    "prefix": "vue-defineProps",
+    "prefix": "vue-defineProps-with-defaults",
     "description": "Vue defineProps with defaults",
     "body": [
       "withDefaults(defineProps<{ foo: string; bar: number }>(), { bar: 200 });"

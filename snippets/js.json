@@ -3,5 +3,55 @@
     "description": "Log",
     "prefix": ["con", "log"],
     "body": ["console.log($1);"]
+  },
+  "xPRO:Storybook Vue2": {
+    "prefix": "sb-vue2",
+    "description": "Vue2 Storybook Template",
+    "body": [
+      "import ${1:${TM_FILENAME/(.*).stories.js?/${1}/}} from '../components/${1:${TM_FILENAME/(.*).stories.js?/${1}/}}.vue';",
+      "",
+      "export default {",
+      "\ttitle: '${2:Components}/${1:${TM_FILENAME/(.*).stories.js?/${1}/}}',",
+      "\tcomponent: ${1:${TM_FILENAME/(.*).stories.js?/${1}/}},",
+      "};",
+      "",
+      "const Template = (args, { argTypes }) => ({",
+      "\tcomponents: { ${1:${TM_FILENAME/(.*).stories.js?/${1}/}} },",
+      "\tprops: Object.keys(argTypes),",
+      "\ttemplate: '<${1:${TM_FILENAME/(.*).stories.js?/${1}/}} :${5:data}=\"${6:data}\"/>',",
+      "});",
+      "",
+      "export const ${3:Primary} = Template.bind({});",
+      "${3:Primary}.args = { ${7:} };",
+      "",
+      "export const ${4:Secondary} = Template.bind({});",
+      "${4:Secondary}.args = { ${8:} };"
+    ]
+  },
+  "xPRO:Storybook Vue3": {
+    "prefix": "sb-vue3",
+    "description": "Vue3 Storybook Template",
+    "body": [
+      "import ${1:${TM_FILENAME/(.*).stories.js?/${1}/}} from '../components/${1:${TM_FILENAME/(.*).stories.js?/${1}/}}.vue';",
+      "",
+      "export default {",
+      "\ttitle: '${2:Components}/${1:${TM_FILENAME/(.*).stories.js?/${1}/}}',",
+      "\tcomponent: ${1:${TM_FILENAME/(.*).stories.js?/${1}/}},",
+      "};",
+      "",
+      "const Template = (args) => ({",
+      "\tcomponents: { ${1:${TM_FILENAME/(.*).stories.js?/${1}/}} },",
+      "\tsetup() {",
+      "\t\treturn { args };",
+      "\t},",
+      "\ttemplate: '<${1:${TM_FILENAME/(.*).stories.js?/${1}/}} v-bind=\"args\"/>',",
+      "});",
+      "",
+      "export const ${3:Primary} = Template.bind({});",
+      "${3:Primary}.args = { ${7:} };",
+      "",
+      "export const ${4:Secondary} = Template.bind({});",
+      "${4:Secondary}.args = { ${8:} };"
+    ]
   }
 }
