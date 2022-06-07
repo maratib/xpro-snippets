@@ -2,7 +2,7 @@
   "name": "xpro-snippets",
   "displayName": "xpro-snippets",
   "description": "Typescript, Vue, Nuxt, React, Next, Angular, Nest, Express, java, spring, spring boot, spring mvc snippets (all in one power pack)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "images/xpro-snippets.png",
   "main": "./out/src/extension",
   "browser": "./out/src/extension",

@@ -39,6 +39,42 @@
       "export default $1;"
     ]
   },
+  "xPRO:React 18 function component": {
+    "prefix": "react-rc",
+    "description": "React 18 Function Component",
+    "body": [
+      "import React, { FC } from 'react';",
+      "",
+      "type Props = {",
+      "\tname?: string;",
+      "};",
+      "",
+      "export const $1: FC<Props> = ({ name }) => ( ",
+      "\t\t<div>",
+      "\t\t\t<h1>Hello</h1>$0",
+      "\t\t</div>",
+      ");"
+    ]
+  },
+  "xPRO:React 18 function component (with return)": {
+    "prefix": "react-rcf",
+    "description": "React 18 Function Component (with return)",
+    "body": [
+      "import React, { FC } from 'react';",
+      "",
+      "type Props = {",
+      "\tname?: string;",
+      "};",
+      "",
+      "export const $1: FC<Props> = ({ name }) => { ",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<h1>Hello</h1>$0",
+      "\t\t</div>",
+      "\t);",
+      "};"
+    ]
+  },
   "xPRO:React Class Component": {
     "prefix": "react-class",
     "description": "React Class Component",

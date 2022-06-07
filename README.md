@@ -84,6 +84,8 @@
 | ----------- | ----------- |
 |`react-fc`|React Function Component | 
 |`react-fcf`|React Function Component (with return) | 
+|`react-rc`|React 18 Function Component | 
+|`react-rcf`|React 18 Function Component (with return) | 
 |`react-class`|React Class Component | 
 |`react-class-pure`|React Class Pure Component | 
 |`react-class-with-constructor`|React Class Component (with constructor) | 
