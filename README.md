@@ -39,6 +39,18 @@
 
  <hr />  
 
+## nest snippets
+
+| Syntax      | Description |
+| ----------- | ----------- |
+|`nest-service`|Nest Service | 
+|`nest-service-logger`|Nest Service with Logger | 
+|`nest-logger`|Nest Logger | 
+|`nest-crud-controller`|Nest CRUD controller | 
+  
+
+ <hr />  
+
 ## next snippets
 
 | Syntax      | Description |
