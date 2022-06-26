@@ -49,6 +49,21 @@
     "description": "Nest Logger",
     "body": ["private readonly logger = new Logger(this.constructor.name);"]
   },
+  "xPRO:Logger": {
+    "prefix": "logger",
+    "description": "Nest Logger",
+    "body": ["this.logger.log(`$0`)"]
+  },
+  "xPRO:Logger Debug": {
+    "prefix": "logger-debug",
+    "description": "Nest Logger Debug",
+    "body": ["this.logger.debug(`$0`)"]
+  },
+  "xPRO:Logger Error": {
+    "prefix": "logger-error",
+    "description": "Nest Logger Error",
+    "body": ["this.logger.error(`$0`)"]
+  },
   "xPRO:Nest CRUD Service": {
     "prefix": "nest-curd-service",
     "description": "Nest CRUD Service",
