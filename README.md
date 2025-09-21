@@ -46,6 +46,10 @@
 |`nest-service`|Nest Service | 
 |`nest-service-logger`|Nest Service with Logger | 
 |`nest-logger`|Nest Logger | 
+|`logger`|Nest Logger | 
+|`logger-debug`|Nest Logger Debug | 
+|`logger-error`|Nest Logger Error | 
+|`nest-curd-service`|Nest CRUD Service | 
 |`nest-crud-controller`|Nest CRUD controller | 
   
 
@@ -105,6 +109,26 @@
 |`react-useEffect`|React useEffect hook | 
 |`react-render`|React render function | 
 |`sb-react-ts`|React Storybook TS | 
+  
+
+ <hr />  
+
+## rn snippets
+
+| Syntax      | Description |
+| ----------- | ----------- |
+|`rn-globalStyleSheet`|React-Native Global Stylesheet | 
+|`rn-view-component`|View Component (with return) | 
+|`rn-button-fwdref`|RN Button FrowardRef Component | 
+|`rn-button-with-type-and-styles`|RN Button with Type And Styles | 
+|`rn-button-with-styles`|RN Button with Styles | 
+|`rn-container`|RN Container Component | 
+|`rn-container-with-global-styles`|RN Container With Global Styles | 
+|`rn-component`|RN Component | 
+|`rn-component-with-global-styles`|RN Component With Global Styles | 
+|`rn-text`|RN Text Component | 
+|`rn-view`|RN View Component | 
+|`rn-button`|RN Button | 
   
 
  <hr />  
